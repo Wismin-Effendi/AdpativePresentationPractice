@@ -98,15 +98,14 @@ extension CarTableViewController: SwipeTableViewCellDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         
+        // we perform swipe left instead of normal swipe right to avoid interference with `detail` button 
         guard orientation == .left else { return nil }
         
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { [unowned self] (action, indexPath) in
-            self.cars.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+            self.confirmDeletion(indexPath)
+            tableView.setEditing(false, animated: true)
         }
-        
-        // deleteAction.image = UIImage(named: "trash-circle")
-        
+                
         return [deleteAction]
     }
     
@@ -128,13 +127,16 @@ extension CarTableViewController: SwipeTableViewCellDelegate {
     }
     
     private func showCancelTapped() {
+        
         let alertController = UIAlertController(title: "Cancelled", message: "Action has been cancelled",
                                                 preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default) { (alert) in
             print("Nothing to do here. Just dismiss the confirmation of cancellation.")
         }
         alertController.addAction(okAction)
+        
         present(alertController, animated: true, completion: nil)
+        
     }
 }
 
