@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" textLabel="XSk-cu-xE9" style="IBUITableViewCellStyleDefault" id="zXn-nv-Gvg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" textLabel="XSk-cu-xE9" style="IBUITableViewCellStyleDefault" id="zXn-nv-Gvg" customClass="CarCell" customModule="AdaptivePresentationExercise" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zXn-nv-Gvg" id="voU-vw-uYE">
@@ -61,19 +60,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-RV-DKC">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kpi-RV-DKC" firstAttribute="leading" secondItem="57A-f4-Waa" secondAttribute="leadingMargin" id="AV2-Fq-ggh"/>
-                            <constraint firstItem="KXk-MB-zUM" firstAttribute="top" secondItem="kpi-RV-DKC" secondAttribute="bottom" id="SOd-K9-cnv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kpi-RV-DKC" secondAttribute="trailing" id="tsj-Qt-pKP"/>
-                            <constraint firstItem="kpi-RV-DKC" firstAttribute="top" secondItem="XGr-d4-mXZ" secondAttribute="bottom" id="zA0-bf-YOP"/>
+                            <constraint firstItem="KXk-MB-zUM" firstAttribute="top" secondItem="kpi-RV-DKC" secondAttribute="bottom" id="DY1-1K-k6k"/>
+                            <constraint firstAttribute="trailing" secondItem="kpi-RV-DKC" secondAttribute="trailing" id="Tej-Qy-IjS"/>
+                            <constraint firstItem="kpi-RV-DKC" firstAttribute="leading" secondItem="57A-f4-Waa" secondAttribute="leading" id="apq-0a-jgu"/>
+                            <constraint firstItem="kpi-RV-DKC" firstAttribute="top" secondItem="XGr-d4-mXZ" secondAttribute="bottom" id="v5m-V4-ih1"/>
                         </constraints>
                     </view>
                     <connections>

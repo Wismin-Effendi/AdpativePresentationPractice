@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class CarTableViewController: UITableViewController {
 
@@ -32,7 +33,8 @@ class CarTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarCell", for: indexPath) as! CarCell
+        cell.delegate = self
         let car = cars[indexPath.row]
         cell.textLabel?.text = car.title
         if car.otherInfo != nil {
@@ -90,3 +92,51 @@ extension CarTableViewController: UIPopoverPresentationControllerDelegate {
         self.dismiss(animated: true, completion: nil)
     }
 }
+
+
+extension CarTableViewController: SwipeTableViewCellDelegate {
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        
+        guard orientation == .left else { return nil }
+        
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { [unowned self] (action, indexPath) in
+            self.cars.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        }
+        
+        // deleteAction.image = UIImage(named: "trash-circle")
+        
+        return [deleteAction]
+    }
+    
+    // helper to show alert for confirmation
+    private func confirmDeletion(_ indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Confirm?", message: "Please confirm deletion", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { [unowned self] (alert) in
+            self.showCancelTapped()
+        }
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { [unowned self] _ in
+            self.cars.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        }
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(yesAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    private func showCancelTapped() {
+        let alertController = UIAlertController(title: "Cancelled", message: "Action has been cancelled",
+                                                preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (alert) in
+            print("Nothing to do here. Just dismiss the confirmation of cancellation.")
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
+
+
