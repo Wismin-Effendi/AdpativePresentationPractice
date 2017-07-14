@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3700B7C71F19526300FFB839 /* CarPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7C61F19526200FFB839 /* CarPictureViewController.swift */; };
 		37D4757D1EF497C000822245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4757C1EF497C000822245 /* AppDelegate.swift */; };
 		37D475821EF497C000822245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D475801EF497C000822245 /* Main.storyboard */; };
 		37D475841EF497C000822245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D475831EF497C000822245 /* Assets.xcassets */; };
@@ -35,7 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37D475791EF497C000822245 /* AdaptivePresentationExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptivePresentationExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3700B7C61F19526200FFB839 /* CarPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarPictureViewController.swift; sourceTree = "<group>"; };
+		37D475791EF497C000822245 /* CustomViewControllerTransitionsExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewControllerTransitionsExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D4757C1EF497C000822245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D475811EF497C000822245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37D475831EF497C000822245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				37D4758E1EF497FE00822245 /* SwipeCellKit.framework */,
-				37D4757B1EF497C000822245 /* AdaptivePresentationExercise */,
+				37D4757B1EF497C000822245 /* CustomViewControllerTransitionsExercise */,
 				37D4757A1EF497C000822245 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,12 +75,12 @@
 		37D4757A1EF497C000822245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37D475791EF497C000822245 /* AdaptivePresentationExercise.app */,
+				37D475791EF497C000822245 /* CustomViewControllerTransitionsExercise.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37D4757B1EF497C000822245 /* AdaptivePresentationExercise */ = {
+		37D4757B1EF497C000822245 /* CustomViewControllerTransitionsExercise */ = {
 			isa = PBXGroup;
 			children = (
 				37D4757C1EF497C000822245 /* AppDelegate.swift */,
@@ -89,18 +91,19 @@
 				37D475921EF4A79A00822245 /* Car.swift */,
 				37D475961EF4D5CB00822245 /* CarData.swift */,
 				37D475981EF4D69C00822245 /* CarTableViewController.swift */,
-				37D4759A1EF567BB00822245 /* InformationViewController.swift */,
 				37D4759C1EF5C02A00822245 /* CarCell.swift */,
+				37D4759A1EF567BB00822245 /* InformationViewController.swift */,
+				3700B7C61F19526200FFB839 /* CarPictureViewController.swift */,
 			);
-			path = AdaptivePresentationExercise;
+			path = CustomViewControllerTransitionsExercise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37D475781EF497C000822245 /* AdaptivePresentationExercise */ = {
+		37D475781EF497C000822245 /* CustomViewControllerTransitionsExercise */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37D4758B1EF497C000822245 /* Build configuration list for PBXNativeTarget "AdaptivePresentationExercise" */;
+			buildConfigurationList = 37D4758B1EF497C000822245 /* Build configuration list for PBXNativeTarget "CustomViewControllerTransitionsExercise" */;
 			buildPhases = (
 				37D475751EF497C000822245 /* Sources */,
 				37D475761EF497C000822245 /* Frameworks */,
@@ -111,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = AdaptivePresentationExercise;
-			productName = AdaptivePresentationExercise;
-			productReference = 37D475791EF497C000822245 /* AdaptivePresentationExercise.app */;
+			name = CustomViewControllerTransitionsExercise;
+			productName = CustomViewControllerTransitionsExercise;
+			productReference = 37D475791EF497C000822245 /* CustomViewControllerTransitionsExercise.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37D475741EF497C000822245 /* Build configuration list for PBXProject "AdaptivePresentationExercise" */;
+			buildConfigurationList = 37D475741EF497C000822245 /* Build configuration list for PBXProject "CustomViewControllerTransitionsExercise" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -146,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37D475781EF497C000822245 /* AdaptivePresentationExercise */,
+				37D475781EF497C000822245 /* CustomViewControllerTransitionsExercise */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D4759D1EF5C02A00822245 /* CarCell.swift in Sources */,
+				3700B7C71F19526300FFB839 /* CarPictureViewController.swift in Sources */,
 				37D475991EF4D69C00822245 /* CarTableViewController.swift in Sources */,
 				37D475971EF4D5CB00822245 /* CarData.swift in Sources */,
 				37D4757D1EF497C000822245 /* AppDelegate.swift in Sources */,
@@ -304,9 +308,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = AdaptivePresentationExercise/Info.plist;
+				INFOPLIST_FILE = CustomViewControllerTransitionsExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ninja.pragprog.careerfoundry.AdaptivePresentationExercise;
+				PRODUCT_BUNDLE_IDENTIFIER = ninja.pragprog.careerfoundry.CustomViewControllerTransitionsExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -321,9 +325,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = AdaptivePresentationExercise/Info.plist;
+				INFOPLIST_FILE = CustomViewControllerTransitionsExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ninja.pragprog.careerfoundry.AdaptivePresentationExercise;
+				PRODUCT_BUNDLE_IDENTIFIER = ninja.pragprog.careerfoundry.CustomViewControllerTransitionsExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -332,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37D475741EF497C000822245 /* Build configuration list for PBXProject "AdaptivePresentationExercise" */ = {
+		37D475741EF497C000822245 /* Build configuration list for PBXProject "CustomViewControllerTransitionsExercise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37D475891EF497C000822245 /* Debug */,
@@ -341,13 +345,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37D4758B1EF497C000822245 /* Build configuration list for PBXNativeTarget "AdaptivePresentationExercise" */ = {
+		37D4758B1EF497C000822245 /* Build configuration list for PBXNativeTarget "CustomViewControllerTransitionsExercise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37D4758C1EF497C000822245 /* Debug */,
 				37D4758D1EF497C000822245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

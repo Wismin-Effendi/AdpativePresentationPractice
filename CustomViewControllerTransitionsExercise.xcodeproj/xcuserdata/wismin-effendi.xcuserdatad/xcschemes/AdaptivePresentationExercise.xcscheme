@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37D475781EF497C000822245"
-               BuildableName = "AdaptivePresentationExercise.app"
-               BlueprintName = "AdaptivePresentationExercise"
-               ReferencedContainer = "container:AdaptivePresentationExercise.xcodeproj">
+               BuildableName = "CustomViewControllerTransitionsExercise.app"
+               BlueprintName = "CustomViewControllerTransitionsExercise"
+               ReferencedContainer = "container:CustomViewControllerTransitionsExercise.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37D475781EF497C000822245"
-            BuildableName = "AdaptivePresentationExercise.app"
-            BlueprintName = "AdaptivePresentationExercise"
-            ReferencedContainer = "container:AdaptivePresentationExercise.xcodeproj">
+            BuildableName = "CustomViewControllerTransitionsExercise.app"
+            BlueprintName = "CustomViewControllerTransitionsExercise"
+            ReferencedContainer = "container:CustomViewControllerTransitionsExercise.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37D475781EF497C000822245"
-            BuildableName = "AdaptivePresentationExercise.app"
-            BlueprintName = "AdaptivePresentationExercise"
-            ReferencedContainer = "container:AdaptivePresentationExercise.xcodeproj">
+            BuildableName = "CustomViewControllerTransitionsExercise.app"
+            BlueprintName = "CustomViewControllerTransitionsExercise"
+            ReferencedContainer = "container:CustomViewControllerTransitionsExercise.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37D475781EF497C000822245"
-            BuildableName = "AdaptivePresentationExercise.app"
-            BlueprintName = "AdaptivePresentationExercise"
-            ReferencedContainer = "container:AdaptivePresentationExercise.xcodeproj">
+            BuildableName = "CustomViewControllerTransitionsExercise.app"
+            BlueprintName = "CustomViewControllerTransitionsExercise"
+            ReferencedContainer = "container:CustomViewControllerTransitionsExercise.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
