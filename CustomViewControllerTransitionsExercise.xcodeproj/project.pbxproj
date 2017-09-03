@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3700B7C71F19526300FFB839 /* CarPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7C61F19526200FFB839 /* CarPictureViewController.swift */; };
+		3700B7CD1F19570A00FFB839 /* CustomDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7C91F19570A00FFB839 /* CustomDismissAnimator.swift */; };
+		3700B7CE1F19570A00FFB839 /* CustomInteractionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7CA1F19570A00FFB839 /* CustomInteractionAnimator.swift */; };
+		3700B7CF1F19570A00FFB839 /* CustomNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7CB1F19570A00FFB839 /* CustomNavigationAnimator.swift */; };
+		3700B7D01F19570A00FFB839 /* CustomPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700B7CC1F19570A00FFB839 /* CustomPresentAnimator.swift */; };
 		37D4757D1EF497C000822245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4757C1EF497C000822245 /* AppDelegate.swift */; };
 		37D475821EF497C000822245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D475801EF497C000822245 /* Main.storyboard */; };
 		37D475841EF497C000822245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D475831EF497C000822245 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		3700B7C61F19526200FFB839 /* CarPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarPictureViewController.swift; sourceTree = "<group>"; };
+		3700B7C91F19570A00FFB839 /* CustomDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDismissAnimator.swift; sourceTree = "<group>"; };
+		3700B7CA1F19570A00FFB839 /* CustomInteractionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInteractionAnimator.swift; sourceTree = "<group>"; };
+		3700B7CB1F19570A00FFB839 /* CustomNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimator.swift; sourceTree = "<group>"; };
+		3700B7CC1F19570A00FFB839 /* CustomPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimator.swift; sourceTree = "<group>"; };
 		37D475791EF497C000822245 /* CustomViewControllerTransitionsExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewControllerTransitionsExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D4757C1EF497C000822245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D475811EF497C000822245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3700B7C81F1956C200FFB839 /* customTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				3700B7C91F19570A00FFB839 /* CustomDismissAnimator.swift */,
+				3700B7CA1F19570A00FFB839 /* CustomInteractionAnimator.swift */,
+				3700B7CB1F19570A00FFB839 /* CustomNavigationAnimator.swift */,
+				3700B7CC1F19570A00FFB839 /* CustomPresentAnimator.swift */,
+			);
+			name = customTransitions;
+			sourceTree = "<group>";
+		};
 		37D475701EF497C000822245 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 		37D4757B1EF497C000822245 /* CustomViewControllerTransitionsExercise */ = {
 			isa = PBXGroup;
 			children = (
+				3700B7C81F1956C200FFB839 /* customTransitions */,
 				37D4757C1EF497C000822245 /* AppDelegate.swift */,
 				37D475801EF497C000822245 /* Main.storyboard */,
 				37D475831EF497C000822245 /* Assets.xcassets */,
@@ -172,13 +192,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3700B7CE1F19570A00FFB839 /* CustomInteractionAnimator.swift in Sources */,
+				3700B7CD1F19570A00FFB839 /* CustomDismissAnimator.swift in Sources */,
 				37D4759D1EF5C02A00822245 /* CarCell.swift in Sources */,
 				3700B7C71F19526300FFB839 /* CarPictureViewController.swift in Sources */,
 				37D475991EF4D69C00822245 /* CarTableViewController.swift in Sources */,
+				3700B7D01F19570A00FFB839 /* CustomPresentAnimator.swift in Sources */,
 				37D475971EF4D5CB00822245 /* CarData.swift in Sources */,
 				37D4757D1EF497C000822245 /* AppDelegate.swift in Sources */,
 				37D475931EF4A79A00822245 /* Car.swift in Sources */,
 				37D4759B1EF567BB00822245 /* InformationViewController.swift in Sources */,
+				3700B7CF1F19570A00FFB839 /* CustomNavigationAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

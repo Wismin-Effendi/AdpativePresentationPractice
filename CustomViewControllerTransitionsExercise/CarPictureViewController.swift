@@ -12,17 +12,21 @@ class CarPictureViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    var imageName: String!
+    var car: Car!     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setTitle()
         setImage()
     }
     
-
+    private func setTitle() {
+        navigationController?.title = car.title
+    }
+    
     private func setImage() {
-        imageView.image = UIImage(named: imageName)
+        imageView.image = UIImage(named: car.imageName)
     }
 
+    
 }
